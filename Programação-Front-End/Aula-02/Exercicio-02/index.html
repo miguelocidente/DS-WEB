@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Trocar Imagem</title>
+    <style>
+        /* CSS opcional para estilizar a página */
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #foto {
+            width: 400px;
+            height: 250px;
+            border: 3px solid #333;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercício: Trocar Imagem com setAttribute</h1>
+
+    <!-- A imagem que será alterada. 
+         Começa com uma imagem placeholder. -->
+    <img id="foto" src="Captura de tela 2026-02-10 115422.png" alt="Imagem de exemplo">
+
+    <div>
+        <!-- Botão 1: Troca para a imagem de um gato -->
+        <button onclick="trocarParaImagem1( )">meu git hub</button>
+
+        <!-- Botão 2: Troca para a imagem de um cachorro -->
+        <button onclick="trocarParaImagem2()">surfista prateado</button>
+
+        <!-- Botão 3: Mostra o 'src' atual no console -->
+        <button onclick="mostrarSrcNoConsole()">Qual é a imagem atual?</button>
+    </div>
+
+    <!-- Importa o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

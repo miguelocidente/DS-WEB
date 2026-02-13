@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3 - Mudar Cor da Página</title>
+    <style>
+        /* CSS opcional para estilizar e centralizar */
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            /* Adiciona uma transição suave para a mudança de cor */
+            transition: background-color 0.5s ease;
+        }
+        #titulo-principal {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- O título que será alterado pelo JavaScript.
+         Ele precisa de um 'id' para ser encontrado. -->
+    <h1 id="titulo-principal">Clique em um botão para mudar a cor e o título</h1>
+
+    <div>
+        <!-- Botão 1: Muda o fundo para Azul -->
+        <button onclick="mudarParaAzul()">Fundo Azul</button>
+
+        <!-- Botão 2: Muda o fundo para Verde -->
+        <button onclick="mudarParaVerde()">Fundo Verde</button>
+
+        <!-- Botão 3: Muda o fundo para Vermelho -->
+        <button onclick="mudarParaVermelho()">Fundo Vermelho</button>
+    </div>
+
+    <!-- Importa o arquivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
